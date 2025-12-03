@@ -1,24 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <link rel="stylesheet" href="style.css">
-     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Mon CV
-        <h1>Sanny Merveil ADISSODA</h1>
-<p>Développeur Web débutant – Passionné par la création de sites modernes</p>
-
-    </title>
-
-    <title>Mon CV</title>
-    <section id="description">
-    <h2>Description</h2>
-    <p>Étudiant en informatique, motivé, sérieux et passionné par le web.</p>
-</section>
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mon CV — Prénom Nom</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Mon CV</h1>
+  <header class="hero">
+    <div class="container">
+      <h1 class="name">Prénom NOM</h1>
+      <p class="title">Développeur Web Junior</p>
+      <p class="contact">Email : <a href="mailto:email@example.com">email@example.com</a> · Téléphone : +229 00 00 00 00</p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section id="description" class="section">
+      <h2>Courte description</h2>
+      <p>Je suis un étudiant passionné par le développement web, motivé, dynamique et déterminé à monter en compétences.</p>
+    </section>
+
+    <section id="formations" class="section">
+      <h2>Formations</h2>
+      <ul>
+        <li><strong>2024 — Licence 1 Informatique</strong>, Université XYZ</li>
+        <li><strong>2020 — Baccalauréat Série D</strong>, Lycée ABC</li>
+      </ul>
+    </section>
+
+    <section id="experiences" class="section">
+      <h2>Expériences</h2>
+      <ul>
+        <li><strong>2024 — Stage développeur</strong> · Société Exemple</li>
+      </ul>
+    </section>
+
+    <section id="competences" class="section">
+      <h2>Compétences</h2>
+      <ul class="skills">
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>Git & GitHub</li>
+        <li>VS Code</li>
+      </ul>
+    </section>
+
+    <section id="associations" class="section">
+      <h2>Associations</h2>
+      <ul>
+        <li>Club informatique de l’Université XYZ</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Prénom Nom — CV</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
